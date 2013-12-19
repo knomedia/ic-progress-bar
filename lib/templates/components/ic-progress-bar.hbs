@@ -1,0 +1,22 @@
+<style>
+  ic-progress-bar {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    color: darkgrey;
+  }
+  .ic-progress-bar-border {
+    width: 100%;
+    border: solid 1px darkgrey;
+    border-radius: 5px;
+  }
+  .ic-progress-bar-fill {
+    background: lightgrey;
+    padding: 15px;
+    width: 60%;
+    border-radius: 5px;
+  }
+</style>
+<div class='ic-progress-bar-border'>
+  <div class='ic-progress-bar-fill' {{bind-attr style=widthStyle}}>
+    {{yield}}
+  </div>
+</div>

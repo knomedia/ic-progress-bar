@@ -4,38 +4,38 @@
   if (typeof define === 'function' && define.amd) {
     define([
       'ember',
-      './lib/components/x-foo',
+      './lib/components/ic-progress-bar',
       './lib/templates'
-    ], function(Ember, XFooComponent) {
-      return factory(Ember, XFooComponent);
+    ], function(Ember, IcProgressBarComponent) {
+      return factory(Ember, IcProgressBarComponent);
     });
   } else if (typeof exports === 'object') {
     module.exports = factory(
       require('ember'),
-      require('./lib/components/x-foo'),
+      require('./lib/components/ic-progress-bar'),
       require('./lib/templates')
     );
   } else {
     factory(
       Ember,
-      XFooComponent
+      IcProgressBarComponent
     );
   }
-}(this, function(Ember, XFooComponent) {
+}(this, function(Ember, IcProgressBarComponent) {
 
   // automatically register components/views etc. on the container so that
   // consumers of the library don't have to do it.
   Ember.Application.initializer({
     name: 'ic-progress-bar',
     initialize: function(container, application) {
-      container.register('component:x-foo', XFooComponent);
+      container.register('component:ic-progress-bar', IcProgressBarComponent);
     }
   });
 
   // return all the things so people don't have to dig down into the repository
   // to access the objects in lib
   return {
-    XFooComponent: XFooComponent
+    IcProgressBar: IcProgressBarComponent
   };
 
 });
