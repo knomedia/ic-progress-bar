@@ -5,7 +5,8 @@
     "Jon Doe <jon@example.com>"
   ],
   "dependencies": {
-    "ember": "1.2.0"
+    "ember": "1.2.0",
+    "ic-styled": "1.1.4"
   },
   "license": "MIT",
   "ignore": [

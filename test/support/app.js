@@ -6,8 +6,10 @@ App.injectTestHelpers();
 
 App.ApplicationController = Ember.Controller.extend({
   foo: 'bar',
+  mx: 6,
+  vl: 4,
   actions: {
-    setFoo: function() {
+    completed: function() {
       this.set('foo', 'baz');
     }
   }

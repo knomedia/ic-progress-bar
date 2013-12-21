@@ -5,7 +5,8 @@
     define([
       'ember',
       './lib/components/ic-progress-bar',
-      './lib/templates'
+      'ic-styled',
+      './lib/templates',
     ], function(Ember, IcProgressBarComponent) {
       return factory(Ember, IcProgressBarComponent);
     });
@@ -13,6 +14,7 @@
     module.exports = factory(
       require('ember'),
       require('./lib/components/ic-progress-bar'),
+      require('ic-styled'),
       require('./lib/templates')
     );
   } else {

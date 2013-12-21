@@ -6,7 +6,7 @@ helpers = this.merge(helpers, Ember.Handlebars.helpers); data = data || {};
 function program1(depth0,data) {
   
   
-  data.buffer.push("\n  Progress\n");
+  data.buffer.push("\n  Score\n");
   }
 
   data.buffer.push("Current Amount");
@@ -24,12 +24,13 @@ function program1(depth0,data) {
   },contexts:[],types:[],hashContexts:hashContexts,hashTypes:hashTypes,data:data};
   data.buffer.push(escapeExpression(((stack1 = helpers.input || (depth0 && depth0.input)),stack1 ? stack1.call(depth0, options) : helperMissing.call(depth0, "input", options))));
   data.buffer.push("\n");
-  hashContexts = {'id': depth0,'max': depth0,'value': depth0};
-  hashTypes = {'id': "STRING",'max': "ID",'value': "ID"};
+  hashContexts = {'id': depth0,'max': depth0,'value': depth0,'on-complete': depth0};
+  hashTypes = {'id': "STRING",'max': "ID",'value': "ID",'on-complete': "STRING"};
   options = {hash:{
     'id': ("ic-progress-bar-1"),
     'max': ("mx"),
-    'value': ("vl")
+    'value': ("vl"),
+    'on-complete': ("completed")
   },inverse:self.noop,fn:self.program(1, program1, data),contexts:[],types:[],hashContexts:hashContexts,hashTypes:hashTypes,data:data};
   stack2 = ((stack1 = helpers['ic-progress-bar'] || (depth0 && depth0['ic-progress-bar'])),stack1 ? stack1.call(depth0, options) : helperMissing.call(depth0, "ic-progress-bar", options));
   if(stack2 || stack2 === 0) { data.buffer.push(stack2); }
