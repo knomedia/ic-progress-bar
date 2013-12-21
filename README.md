@@ -22,4 +22,3 @@ Then in a different tab run your tests with testem:
 ```sh
 $ testem
 ```
-
